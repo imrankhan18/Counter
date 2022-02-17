@@ -9,25 +9,11 @@
     <script src="index.js"></script>
   </head>
   <body>
-    <button onclick="inc()">+</button>
+    <button onclick="increment()">+</button>
     <input id="g" type="number" min="0" value="0" />
-    <button onclick="dec()">-</button><br><br>
+    <button onclick="decrement()">-</button><br><br>
     <button onclick="display()">Show</button>
     <p id="d"></p>
   </body>
-  <script>
-    function inc() {
-      var v = document.getElementById("g").value;
-      v++;
-      document.getElementById("g").value = v;
-    }
-    function dec() {
-      var v = document.getElementById("g").value;
-      if (v != 0) {
-        v--;
-        document.getElementById("g").value = v;
-      }
-    }
-    
-  </script>
+
 </html>
